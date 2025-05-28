@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Fresh Start Landscaping</title>
+  <meta name="description" content="Fresh Start Landscaping offers affordable, quality yard care services in Illinois." />
+  <meta property="og:title" content="Fresh Start Landscaping" />
+  <meta property="og:description" content="Affordable, reliable yard care in Poplar Grove & Candlewick Lake, Illinois." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #2e7d32;
+      --yellow: #ffd600;
+      --black: #000;
+      --gray: #333;
+      --white: #fff;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, var(--white), var(--black));
+      color: var(--black);
+    }
+    body {
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+    header {
+      background-color: var(--white);
+      color: var(--black);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+    header p {
+      margin: 10px 0 20px;
+      font-weight: 600;
+    }
+    .logo-double {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .logo-double img {
+      max-width: 300px;
+      width: 100%;
+    }
+    nav {
+      background-color: var(--green);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--black);
+      text-decoration: none;
+      font-weight: 600;
+      background-color: var(--yellow);
+      padding: 10px 18px;
+      border-radius: 25px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: var(--black);
+      color: var(--yellow);
+      transform: scale(1.1);
+    }
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+    .highlight {
+      color: var(--green);
+    }
+    .centered {
+      text-align: center;
+    }
+    .info-card {
+      background: var(--yellow);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      text-align: center;
+    }
+    .info-card h3 {
+      margin-top: 0;
+      color: var(--green);
+    }
+    .flyer {
+      margin: 30px auto;
+      display: block;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+    ul {
+      text-align: left;
+      list-style: square;
+      padding-left: 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .coming-soon {
+      opacity: 0.6;
+      font-style: italic;
+      color: var(--white);
+    }
+    .location-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .location-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    section#locations {
+      background-color: #111;
+      color: var(--white);
+    }
+    section#discounts {
+      background-color: var(--yellow);
+      color: var(--black);
+      font-weight: 600;
+      text-align: center;
+      height
+    }
+    form {
+      background-color: var(--white);
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: var(--green);
+      color: var(--white);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b5e20;
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      .logo-double {
+        flex-direction: column;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+    #discount-list {
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fresh Start Landscaping</h1>
+    <p>Locally owned by Aydan Shank & Harper Rydell</p>
+    <div class="logo-double">
+      <img src="logo.png" alt="Fresh Start Landscaping logo">
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#locations">Locations</a>
+    <a href="#discounts">Discounts</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="info-card">
+        <h3>Why Choose Us?</h3>
+        <p>Affordable, reliable, and locally owned landscaping services designed with care and community in mind.</p>
+      </div>
+      <div class="info-card">
+        <h3>New Season, Fresh Start</h3>
+        <p>Book your spring cleanups now! Let's make your yard the best on the block.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="centered highlight">Our Services</h2>
+      <img src="flyer.jpg" alt="Fresh Start Landscaping flyer" class="flyer">
+      <ul>
+        <li class="coming-soon">Lawn Mowing (Possibly Coming Soon)</li>
+        <li class="coming-soon">Heavy and Medium Brush Removal</li>
+        <li class="coming-soon">Flower/Garden Watering</li>
+        <li class="coming-soon">Dirt Removal and Lawn Leveling</li>
+        <li class="coming-soon">Hedge Trimming</li>
+        <li class="coming-soon">Snow Removal</li>
+        <li class="coming-soon">Leaf Collection</li>
+      </ul>
+    </section>
+
+    <section id="locations">
+      <h2 class="centered highlight">Where We Work</h2>
+      <p class="centered">Currently servicing Poplar Grove and Candlewick Lake, Illinois.</p>
+      <div class="location-container">
+        <img src="map.jpg" alt="Service Area Map" />
+      </div>
+    </section>
+
+    <section id="discounts">
+      🚨 Discounts Coming Soon! Stay Tuned. 🚨
+    <br>
+        <h5>
+            <ul id="discount-list" style="list-style-image: url('lawnmower.jpg');">
+              <li>20% Discount on all home owners ages 60 and above</li>
+              <li>10% discount on all payments $80 and above</li>
+              <li>We <strong>are available</strong> for <strong>big projects</strong>!</li>
+            </ul>
+        </h5>
+    </section>
+
+    <section id="contact">
+      <h2 class="centered highlight">Contact Us</h2>
+      <p class="centered"><strong>Harper:</strong> 815-566-5024 | <strong>Aydan:</strong> 779-475-7630</p>
+      <form action="https://formspree.io/f/mnndkybb" method="POST">
+        <input type="text" name="name" placeholder="Your Name *" required />
+        <input type="email" name="email" placeholder="Your Email *" required />
+        <textarea name="message" placeholder="Your Message *" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    Fresh Start Landscaping | Harper: 815-566-5024 | Aydan: 779-475-7630
+  </footer>
+</body>
+</html>
